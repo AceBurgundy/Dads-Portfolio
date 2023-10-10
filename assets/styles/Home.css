@@ -1,0 +1,58 @@
+#home {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home-image {
+    width: 100%;
+    filter: brightness(60%) grayscale(100%);
+}
+
+#home-fullname {
+    font-size: calc(3rem + 5vw);
+    color: white;
+}
+
+#home-work {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#facebook-icon {
+    fill: white;
+    width: 2rem;
+}
+
+#home-overview {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#home-overview-bottom {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+    #home {
+        width: 95%;
+        height: 80%;
+    }
+    #home-image {
+        height: 100%;
+        object-fit: cover;
+    }
+    #home-work {
+        color: white;
+        font-size: 1rem;
+    }
+}
